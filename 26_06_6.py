@@ -1,9 +1,7 @@
 x = 10
-def my_function() :
+def my_function():
     x = 20
-    print(x)
-    global x
-    print(x)
+    print(x)  # 20
+    print(globals()['x']) #10
 
-
-my_function() # SyntaxError: name 'x' is used prior to global declaration
+my_function()
